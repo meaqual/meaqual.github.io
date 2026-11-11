@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
 
 :root {
   color-scheme: light;
@@ -9,7 +9,7 @@
   --accent: #1c5c50;
   --line: #d7dfd9;
   --tint: #e8f0eb;
-  --display: 'Instrument Serif', Georgia, serif;
+  --portrait-image: url('https://avatars.githubusercontent.com/u/108602032?v=4&s=400');
   --body: 'Instrument Sans', system-ui, sans-serif;
 }
 
@@ -31,7 +31,7 @@ h1, h2, h3, h4, p { margin: 0; }
 .skip:focus { transform: none; }
 
 .hero { display: grid; grid-template-columns: 1fr 11rem; align-items: center; gap: clamp(2rem, 7vw, 6rem); padding-block: clamp(3rem, 7.5vw, 5.5rem); }
-h1 { font: 400 clamp(3.6rem, 9vw, 6.2rem)/.98 var(--display); letter-spacing: -.025em; }
+h1 { font-size: clamp(2.4rem, 6vw, 3.75rem); line-height: 1.12; font-weight: 700; }
 .role { margin-top: 1rem; color: var(--accent); font-weight: 600; }
 .bio { margin-top: 1.05rem; max-width: 40rem; color: var(--muted); }
 .portrait {
@@ -44,14 +44,14 @@ h1 { font: 400 clamp(3.6rem, 9vw, 6.2rem)/.98 var(--display); letter-spacing: -.
   overflow: hidden;
   background: var(--tint);
   border: 1px solid var(--line);
-  font: 400 3rem/1 var(--display);
+  font-size: 3rem; line-height: 1;
   color: var(--accent);
 }
 .portrait::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: center / cover no-repeat url('https://avatars.githubusercontent.com/u/108602032?v=4&s=400');
+  background: center / cover no-repeat var(--portrait-image);
 }
 .links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.4rem; }
 .links a { border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); padding: .36rem .72rem; text-decoration: none; font-size: .88rem; font-weight: 600; }
@@ -61,14 +61,12 @@ h1 { font: 400 clamp(3.6rem, 9vw, 6.2rem)/.98 var(--display); letter-spacing: -.
 .links .primary:hover { background: var(--ink); }
 
 .section { padding-block: 2.5rem 3rem; border-top: 1px solid var(--line); scroll-margin-block-start: 1rem; }
-h2 { font: 400 clamp(2.45rem, 5vw, 3.25rem)/1 var(--display); margin-bottom: 1.55rem; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; font-weight: 700; margin-bottom: 1.55rem; }
 h3 { font-size: 1.06rem; line-height: 1.35; }
 .research-list, .education-list { list-style: none; padding: 0; margin: 0; }
 .research-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
 .research-list li { border-inline-start: 2px solid #86a89b; padding-inline-start: 1rem; }
 .research-list p, .education-list p { color: var(--muted); margin-top: .3rem; font-size: .96rem; }
-.ongoing { margin-top: 1.6rem; }
-.ongoing p { color: var(--muted); margin-top: .35rem; }
 .paper { background: var(--surface); border: 1px solid var(--line); border-inline-start: 3px solid var(--accent); border-radius: .5rem; padding: clamp(1rem, 4vw, 1.8rem); }
 .paper-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .8rem; margin-bottom: .8rem; font-size: .86rem; color: var(--muted); }
 .paper-meta span:first-child { background: var(--tint); color: var(--accent); border-radius: .25rem; font-weight: 700; padding: .1rem .45rem; }
@@ -78,6 +76,8 @@ h3 { font-size: 1.06rem; line-height: 1.35; }
 .venue { font-style: italic; }
 .summary { margin-top: .8rem; }
 .earlier-title { margin-top: 1.8rem; }
+.publication-id { color: var(--accent); white-space: nowrap; }
+.manuscript-role { margin-top: .35rem; color: var(--muted); }
 .publication-list { list-style: none; padding: 0; margin: .5rem 0 0; }
 .publication-list li { padding: .9rem 0; border-bottom: 1px solid var(--line); }
 .publication-list h4 { font-size: 1rem; line-height: 1.4; }
