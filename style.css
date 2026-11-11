@@ -51,7 +51,7 @@ h1 { font-size: clamp(2.4rem, 6vw, 3.75rem); line-height: 1.12; font-weight: 700
   content: '';
   position: absolute;
   inset: 0;
-  background: 58% bottom / 180% no-repeat var(--portrait-image);
+  background: 20% bottom / 180% no-repeat var(--portrait-image);
 }
 .links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.4rem; }
 .links a { border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); padding: .36rem .72rem; text-decoration: none; font-size: .88rem; font-weight: 600; }
