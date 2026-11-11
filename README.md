@@ -10,3 +10,7 @@ The site is static HTML and CSS. To preview, run `python3 -m http.server 8000` f
 4. Check the deployment under **Actions**, then open https://meaqual.github.io/.
 
 Edit `index.html` to update biography, education, and publications. Keep PDFs in `papers/` and use relative URLs. The portrait uses the public GitHub avatar.
+
+## Set a homepage-only portrait
+
+Upload a square image such as `images/avatar.jpg` to this repository. In `style.css`, change `--portrait-image` to `url('images/avatar.jpg')` and commit to `main`. This changes only the portrait on the homepage.
