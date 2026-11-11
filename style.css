@@ -56,9 +56,7 @@ h1 { font-size: clamp(2.4rem, 6vw, 3.75rem); line-height: 1.12; font-weight: 700
 .links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.4rem; }
 .links a { border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); padding: .36rem .72rem; text-decoration: none; font-size: .88rem; font-weight: 600; }
 .links a:hover { border-color: var(--accent); background: var(--tint); }
-.links [aria-hidden], .publication-list [aria-hidden], .scholar [aria-hidden] { display: none; }
-.links .primary { background: var(--accent); border-color: var(--accent); color: white; }
-.links .primary:hover { background: var(--ink); }
+.links [aria-hidden], .scholar [aria-hidden] { display: none; }
 
 .section { padding-block: 2.5rem 3rem; border-top: 1px solid var(--line); scroll-margin-block-start: 1rem; }
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; font-weight: 700; margin-bottom: 1.55rem; }
@@ -67,22 +65,10 @@ h3 { font-size: 1.06rem; line-height: 1.35; }
 .research-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
 .research-list li { border-inline-start: 2px solid #86a89b; padding-inline-start: 1rem; }
 .research-list p, .education-list p { color: var(--muted); margin-top: .3rem; font-size: .96rem; }
-.paper { background: var(--surface); border: 1px solid var(--line); border-inline-start: 3px solid var(--accent); border-radius: .5rem; padding: clamp(1rem, 4vw, 1.8rem); }
-.paper-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem .8rem; margin-bottom: .8rem; font-size: .86rem; color: var(--muted); }
-.paper-meta span:first-child { background: var(--tint); color: var(--accent); border-radius: .25rem; font-weight: 700; padding: .1rem .45rem; }
-.paper h3 { max-width: 48rem; font-size: clamp(1.16rem, 2.4vw, 1.48rem); }
-.authors, .venue, .summary { margin-top: .55rem; color: var(--muted); font-size: .95rem; }
-.authors strong { color: var(--ink); }
-.venue { font-style: italic; }
-.summary { margin-top: .8rem; }
 .earlier-title { margin-top: 1.8rem; }
 .publication-id { color: var(--accent); white-space: nowrap; }
 .publication-list { list-style: none; padding: 0; margin: .5rem 0 0; }
 .publication-list li { padding: .9rem 0; border-bottom: 1px solid var(--line); }
-.publication-list h4 { font-size: 1rem; line-height: 1.4; }
-.publication-list p, .publication-list a { margin-top: .2rem; font-size: .92rem; }
-.publication-list p { color: var(--muted); }
-.publication-list a { display: inline-block; }
 .scholar { display: inline-block; margin-top: 1rem; font-size: .93rem; }
 .education-list { display: grid; gap: 1.25rem; }
 
@@ -97,5 +83,5 @@ h3 { font-size: 1.06rem; line-height: 1.35; }
   .top, .skip { display: none; }
   .frame { width: 100%; }
   .hero, .section { padding-block: 1.2rem; }
-  .paper, .education-list li { break-inside: avoid; }
+  .publication-list li, .education-list li { break-inside: avoid; }
 }
