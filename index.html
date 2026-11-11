@@ -7,14 +7,7 @@
   <link rel="canonical" href="https://meaqual.github.io/">
   <link rel="icon" href="images/bupt-seal.jpg" type="image/jpeg">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .portrait::after { background-position: 20% bottom; }
-    #publications-title, #publications .earlier-title {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      line-height: 1.2;
-      font-weight: 700;
-    }
-  </style>
+  <style>.portrait::after { background-position: 20% bottom; }</style>
   <title>Yuheng Huang</title>
 </head>
 <body>
@@ -85,7 +78,10 @@
         </li>
       </ul>
       <a class="scholar" href="https://scholar.google.com/citations?user=lNxGzAcAAAAJ&amp;hl=en">More on Google Scholar <span aria-hidden="true">↗</span></a>
-      <h3 class="earlier-title">Manuscripts in Submission</h3>
+    </section>
+
+    <section id="submissions" class="section" aria-labelledby="submissions-title">
+      <h2 id="submissions-title">Manuscripts in Submission</h2>
       <ul class="publication-list">
         <li>
           <span class="publication-id">[c5]</span> ***, ***, <strong>Yuheng Huang</strong>, ***, ***.
@@ -123,8 +119,11 @@
           <em>ACM/IEEE Design Automation Conference (DAC)</em>, 2027. In submission.
         </li>
       </ul>
-      <h3 id="projects" class="earlier-title">Project Experience</h3>
-      <ul class="publication-list" aria-labelledby="projects">
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Project Experience</h2>
+      <ul class="publication-list">
         <li>
           <h4>LLM-Based Functional Coverage Model Generation from Specifications</h4>
           <p>Generating functional coverage models from LPDDR5, LPDDR6, DDR5, and DDR6 specifications.</p>
