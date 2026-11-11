@@ -9,7 +9,7 @@
   --accent: #1c5c50;
   --line: #d7dfd9;
   --tint: #e8f0eb;
-  --portrait-image: url('https://avatars.githubusercontent.com/u/108602032?v=4&s=400');
+  --portrait-image: url('images/avatar.jpg');
   --body: 'Instrument Sans', system-ui, sans-serif;
 }
 
@@ -51,7 +51,7 @@ h1 { font-size: clamp(2.4rem, 6vw, 3.75rem); line-height: 1.12; font-weight: 700
   content: '';
   position: absolute;
   inset: 0;
-  background: center / cover no-repeat var(--portrait-image);
+  background: 58% bottom / 180% no-repeat var(--portrait-image);
 }
 .links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.4rem; }
 .links a { border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); padding: .36rem .72rem; text-decoration: none; font-size: .88rem; font-weight: 600; }
@@ -77,7 +77,6 @@ h3 { font-size: 1.06rem; line-height: 1.35; }
 .summary { margin-top: .8rem; }
 .earlier-title { margin-top: 1.8rem; }
 .publication-id { color: var(--accent); white-space: nowrap; }
-.manuscript-role { margin-top: .35rem; color: var(--muted); }
 .publication-list { list-style: none; padding: 0; margin: .5rem 0 0; }
 .publication-list li { padding: .9rem 0; border-bottom: 1px solid var(--line); }
 .publication-list h4 { font-size: 1rem; line-height: 1.4; }
